@@ -1,0 +1,2 @@
+# WemanityKata
+Kata Test
