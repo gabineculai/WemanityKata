@@ -6,8 +6,7 @@ Execution steps:
 4) Execute all unit tests to check the success of the implementation;
 
 
-Implementation details:
-1) Unit tests implemented in order to make sure the changes are not breaking the existin implementation:
+Unit tests implemented in order to make sure the changes are not breaking the existin implementation:
 
 a) QualityNoLessThanZero - makes sure quaity doesn't go bellow zero;
 
@@ -29,3 +28,11 @@ i) BackStageZeroAfterSellIn - makes sure the "Backstage" items quality is zero a
 
 j) ConjuredQualityDecreasesTwiceAsFastAsNormal - makes sure ethe "Conjured" quality decreses twice as fas as default ones;
 
+
+Implementation solution:
+
+a) Use an extension method to add UpdateQuality method on a Item without changing the class;
+
+b) Create a Factory in order to return the correct QualityUpdater;
+
+c) Execute the returned QualityUpdater;
